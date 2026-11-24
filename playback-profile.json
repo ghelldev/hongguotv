@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "note": "站方 2026-11-23 那套 v5 取址协议：medusa 明文字段表、magic/license/signKey/sbox、单集门与分集门、query 设备档案。",
-  "revision": 1,
+  "note": "站方 2026-11-23 v5 取址协议：对齐原生 POST 预加载端点与批量模型支持，完全向后兼容。",
+  "revision": 2,
   "updatedAt": "2026-11-23",
   "v5": {
     "magic": "2d4b4fca49750d433fb5ae2c226dcc56",
@@ -173,12 +173,12 @@
         "userAgent": "com.phoenix.read/73932 (Linux; U; Android 16; zh_CN; 25053RT47C; Build/BP2A.250605.031.A3; Cronet/TTNetVersion:04657795 2026-01-23 QuicVersion:c67e9834 2025-09-08)"
       },
       "model": {
-        "path": "/novel/player/multi_video_model/player/v1",
+        "path": "/novel/player/multi_video_model/preload/v1",
         "host": "api5-normal-sinfonlinea.fqnovel.com",
         "userAgent": "com.phoenix.read/73932 (Linux; U; Android 12; zh_CN_#Hans; PGT-AN10; Build/V417IR;tt-ok/3.12.13.20)"
       }
     },
-    "modelBody": "{\"biz_param\":{\"detail_page_version\":0,\"device_level\":${device_level},\"disable_digg_stat\":false,\"disable_video_relate_book\":false,\"need_all_video_definition\":true,\"need_mp4_align\":false,\"use_os_player\":false,\"use_server_dns\":false,\"video_platform\":1024},\"mixed_video_id_map\":{\"1004\":[\"${id}\"]},\"dr_scene\":\"player\"}",
+    "modelBody": "{\"biz_param\":{\"detail_page_version\":0,\"device_level\":${device_level},\"disable_digg_stat\":false,\"disable_video_relate_book\":false,\"need_all_video_definition\":true,\"need_mp4_align\":false,\"use_os_player\":false,\"use_server_dns\":false,\"video_platform\":1024},\"mixed_video_id_map\":{\"1004\":[\"${id}\"]},\"dr_scene\":\"preload\"}",
     "tabQuery": {"fields": [
       {
         "value": "${id}",
